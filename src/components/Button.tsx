@@ -1,8 +1,8 @@
 // Import
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 
 // Interface
-interface ButtonProps {
+interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   onClick?: () => void;
   className?: string;
@@ -10,7 +10,6 @@ interface ButtonProps {
   ariaLabel?: string;
   ariaExpanded?: boolean;
   type?: 'button' | 'submit' | 'reset';
-  [key: string]: any;
 }
 
 // Component
