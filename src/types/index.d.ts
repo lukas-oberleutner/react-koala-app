@@ -1,24 +1,11 @@
-// export interface RootState {
-//   tableData: TableDataState;
-// }
-//
-// export interface TableDataState {
-//   data: IData;
-// }
-//
-// export type IData = Array<IRecord>;
-//
-// export interface IRecord {
-//   data: Record<string, string>;
-//   children?: Record<string, { records: IRecord[] }>;
-// }
-
 export interface RootState {
   tableData: ITableDataState;
 }
 
 export interface ITableDataState {
   data: IRecord[];
+  loading: boolean;
+  error: string | null;
 }
 
 export interface IRecord {
