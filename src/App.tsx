@@ -17,18 +17,16 @@ function App() {
   }, [dispatch]);
 
   if (loading) {
-    return <div>Načítám data...</div>;
+    return <div className="p-2">Načítám data...</div>;
   }
 
   if (error) {
-    return <div>{error}</div>;
+    return <div className="p-2 text-red-500">{error}</div>;
   }
 
   if (!data || data.length === 0) {
-    return <div>Žádná data k dispozici.</div>;
+    return <div className="p-2 text-red-500">Žádná data k dispozici.</div>;
   }
-
-  console.log('test');
 
   return (
     <div>

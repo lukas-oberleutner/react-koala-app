@@ -13,6 +13,6 @@ export default defineConfig({
   },
   base: '/react-koala-app/',
   server: {
-    port: 3001,
+    port: 3000,
   },
 });

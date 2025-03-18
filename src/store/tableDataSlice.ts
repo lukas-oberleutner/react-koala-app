@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { IRecord, ITableDataState } from '@/types';
 
 // Constants
-const DATA_URL = 'http://localhost:3001/react-koala-app/data/data.json';
+const DATA_URL = 'data/data.json';
 
 // Interface
 const initialState: ITableDataState = {
